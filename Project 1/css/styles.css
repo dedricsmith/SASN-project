@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+/* Makes it the size I want */
+* {
+	box-sizing: border-box;
+	color: #fff;
+	font-family: 'Noto Serif', serif;
+	padding: 0;
+	margin: 0;
+}
+
+/* Most used colors */
+
+:root {
+	--primary-color: #ff0100;
+}
+
+/* Taking out all defeult styles */
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 90%;
+}
+
+i,
+a {
+	color: var(--primary-color);
+}
+
+/* Navbar */
+
+/* Setting height and width for Nav */
+.nav {
+	height: 70px;
+	font-size: 1.1rem;
+	padding: 20px 15px 0;
+	background-color: black;
+}
+
+/* Taking away the padding and margin for ul */
+.nav ul {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.nav li:nth-child(4) {
+	padding-right: 15px;
+}
+
+.nav a {
+	padding: 0.5em;
+	color: #ffffff;
+}
+
+.navbar-btn {
+	margin-right: 25px;
+}
+
+/* Set for when hover over effect */
+.nav a:hover {
+	color: var(--primary-color);
+	font-weight: bold;
+}
+
+.secondary-btn {
+	margin: 10px 0;
+	max-width: 150px;
+}
+
+/* Header */
+
+/* The styling for the header section */
+.header-section {
+	background-color: rgb(0, 0, 0);
+	color: #ffffff;
+	padding-bottom: 45px;
+	padding-top: 30px;
+}
+
+/* Defining the height for header section */
+.header-box {
+	height: 600px;
+	margin: 20px 50px 200px;
+}
+
+/* Sets the height and width for the content of the flexboxes */
+.box-item {
+	width: 100%;
+	margin: 10px;
+	flex-direction: column;
+	align-items: start;
+}
+/* Sets the position and height of 1st element with the class of grid-item */
+.box-item:nth-child(1) {
+	align-self: start;
+	height: 350px;
+}
+/* Sets the position and height of 2nd element with the class of grid-item */
+.box-item:nth-child(2) {
+	align-self: end;
+	height: 50px;
+}
+.box-item:nth-child(3) {
+	align-self: start;
+}
+/* Sets padding and font size of h2 elements that have a class of flexbox items */
+.box-item h2 {
+	font-size: 2.5rem;
+	max-width: 300px;
+	padding: 10px 20px 45px;
+}
+
+.box-item h4 {
+	width: 200px;
+}
+
+.box-item h3 {
+	font-size: 18px;
+	max-width: 140px;
+	padding: 0 0 10px;
+}
+
+.box-item img {
+	animation: fadeIn 5s;
+}
+
+.header-title {
+	justify-content: space-evenly;
+	align-items: start;
+	line-height: 1.2;
+	animation: fadeIn 5s;
+}
+
+.title-border:after {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	margin-left: 0;
+	width: 65%;
+	border-top: 2.5px solid var(--primary-color);
+	padding-bottom: 5px;
+}
+
+/* Shop products section */
+
+.shop-section {
+	background-image: linear-gradient(
+		to bottom,
+		black,
+		var(--primary-color)
+	);
+	padding: 10px 20px;
+	color: #ffff;
+}
+
+.shop-box {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.shop-section h3 {
+	text-align: center;
+	margin: 30px 0;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+
+.shop-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.shop-item h4,
+h5 {
+	padding: 8px;
+}
+
+.shop-item h5 {
+	text-decoration: underline;
+	font-size: 17px;
+}
+
+.shop-item img {
+	border: 8px solid black;
+}
+
+.link-section {
+	background-color: black;
+	color: white;
+	padding: 10px 20px;
+	border-bottom: 1px solid #333;
+}
+
+.schedule-box {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.one-btn {
+	width: fit-content;
+	color: #ffffff;
+	background-color: #000;
+	font-size: 18px;
+	border: 5px solid #ffffff;
+	cursor: pointer;
+}
+
+.schedule-box div {
+	color: var(--primary-color);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.footer {
+	background-color: #000;
+	padding: 15px 15px;
+	justify-content: space-around;
+}
+
+.footer li,
+a {
+	padding: 10px;
+}
+
+.footer a:hover {
+	color: var(--primary-color);
+	opacity: 0.6;
+}
+
+.main-footer {
+	background-color: #fff;
+	color: var(--primary-color);
+	margin: 10px 10px 25px;
+}
+
+.footer-box {
+	width: 300px;
+	height: 200px;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+.footer-title {
+	color: var(--primary-color);
+	padding: 10px 0 20px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.main-footer div {
+	display: inline-block;
+	margin-top: 1em;
+	cursor: pointer;
+}
+
+.main-footer ul {
+	text-decoration: underline;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
